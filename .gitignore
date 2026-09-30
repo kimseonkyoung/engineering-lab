@@ -1,0 +1,26 @@
+# Java
+*.class
+*.log
+hs_err_pid*
+
+# Gradle
+.gradle/
+build/
+
+# Maven
+target/
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
