@@ -41,6 +41,8 @@ cs/
   Plain Java experiments run as single source files without a build tool.
 - 의존성이 필요한 실험(Spring 등)만 해당 폴더 안에 별도 빌드 설정을 둡니다.
   Only experiments that need dependencies (e.g. Spring) carry their own build config.
+- **예외:** 회사 실험은 JDK 8 + Eclipse로 실행하므로 단일 파일 실행(JDK 11+) 규칙의 예외로 둡니다. 이때 README의 Environment에 실행 방법을 적습니다.
+  **Exception:** Experiments at work run on JDK 8 + Eclipse, so they are exempt from the single-file rule; record how they were run in the Environment section.
 
 ## 학습 기록 원칙 / How to Record
 
@@ -66,4 +68,4 @@ cs/
 
 | 날짜 / Date | 디렉터리 / Dir | 실험 / Experiment | 한 줄 결론 / One-line takeaway |
 |---|---|---|---|
-| | | | |
+| 2026-10-08 | `cs/` | [race-condition](cs/race-condition/) | 락 없는 증가는 갱신을 잃고, JIT는 그 버그를 숨길 뿐이며, `volatile`은 원자성을 주지 않는다 — 락만 매번 정답 |
