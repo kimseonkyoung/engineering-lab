@@ -6,7 +6,7 @@ Pick one when there's nothing new to test. Remove the line once done and add it 
 ## cs/
 
 - [ ] 세마포어 허가 3개 + 스레드 10개: `acquire`(대기) vs `tryAcquire`(거절) — 처리 시간과 거절 수 *(OSTEP 세마포어 장)*
-- [ ] B(`-Xint`)를 현재 코드로 다시 돌려 `JVM args=[-Xint]`가 찍힌 결과로 교체한다 *(race-condition 후속)*
+- [ ] B(`-Xint`)를 현재 코드로 다시 돌려 `JVM args=[-Xint]`가 찍힌 결과로 교체한다 *(race_condition 후속)*
 - [ ] 생산자·소비자(유한 버퍼)를 세마포어로 구현하고 버퍼 크기별 처리량 비교
 - [ ] 연결 대기열(backlog)이 꽉 찼을 때 클라이언트는 무엇을 보는가 (Java 소켓)
 - [ ] 네이글 알고리즘 on/off(`TCP_NODELAY`)에 따른 작은 쓰기의 지연 차이
@@ -16,9 +16,9 @@ Pick one when there's nothing new to test. Remove the line once done and add it 
 ## java/
 
 - [ ] `Semaphore`의 fair 옵션이 처리량과 대기 순서에 주는 영향
-- [ ] `-XX:+PrintCompilation`으로 `noLock`이 C2(단계 4)로 컴파일되는 시점과, A에서 손실이 사라지는 회차가 일치하는가? (`%` 표시 = OSR) *(race-condition 후속)*
-- [ ] `AtomicInteger.incrementAndGet()`과 `LongAdder`를 같은 표에 추가하면 정확성과 시간은? *(race-condition 후속, OSTEP 28.9 비교 후 교환 이후)*
-- [ ] `volatile` 없는 종료 플래그(`while (!stop)`)가 실제로 멈추지 않는가? *(race-condition 후속 — 같은 원리: JIT가 읽기를 반복문 밖으로 끌어냄)*
+- [ ] `-XX:+PrintCompilation`으로 `noLock`이 C2(단계 4)로 컴파일되는 시점과, A에서 손실이 사라지는 회차가 일치하는가? (`%` 표시 = OSR) *(race_condition 후속)*
+- [ ] `AtomicInteger.incrementAndGet()`과 `LongAdder`를 같은 표에 추가하면 정확성과 시간은? *(race_condition 후속, OSTEP 28.9 비교 후 교환 이후)*
+- [ ] `volatile` 없는 종료 플래그(`while (!stop)`)가 실제로 멈추지 않는가? *(race_condition 후속 — 같은 원리: JIT가 읽기를 반복문 밖으로 끌어냄)*
 - [ ] 상속·다형성: 오버라이딩된 메서드를 생성자에서 호출하면 무슨 일이 생기는가
 - [ ] 예외: 체크 예외 vs 언체크 예외 — 트랜잭션 롤백 규칙과 연결 *(토비 4장 대비)*
 - [ ] *(11월~)* 이펙티브 자바 항목 중 실험으로 검증 가능한 것

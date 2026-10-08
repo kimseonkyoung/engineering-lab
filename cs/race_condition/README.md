@@ -115,4 +115,4 @@ A와 B는 같은 코드인데 결과가 달랐다. 차이는 JIT 컴파일 여�
 
 ## Next question
 
-[`BACKLOG.md`](../../BACKLOG.md)의 `cs/`, `java/` 항목으로 옮겼다. *(race-condition 후속)* 표시가 붙은 항목들이다.
+[`BACKLOG.md`](../../BACKLOG.md)의 `cs/`, `java/` 항목으로 옮겼다. *(race_condition 후속)* 표시가 붙은 항목들이다.

@@ -27,12 +27,12 @@ This is not a finished project — it is **a place to collect small experiments 
 
 ## 실험 단위 / Experiment unit
 
-실험 하나 = 폴더 하나. 폴더 이름은 날짜가 아니라 **주제**로 짓습니다.
-One experiment = one folder, named by **topic**, not by date.
+실험 하나 = 폴더 하나. 폴더 이름은 날짜가 아니라 **주제**로 짓고, 단어는 **밑줄(`_`)**로 잇습니다. 자바 패키지 이름에 하이픈(`-`)을 쓸 수 없기 때문입니다.
+One experiment = one folder, named by **topic**, not by date, with words joined by **underscores** — Java package names can't contain hyphens.
 
 ```
 cs/
-  semaphore-throttle/
+  semaphore_throttle/
     README.md                 # TEMPLATE.md 양식으로 작성
     SemaphoreThrottle.java
 ```
@@ -68,4 +68,4 @@ cs/
 
 | 날짜 / Date | 디렉터리 / Dir | 실험 / Experiment | 한 줄 결론 / One-line takeaway |
 |---|---|---|---|
-| 2026-10-08 | `cs/` | [race-condition](cs/race-condition/) | 락 없는 증가는 갱신을 잃고, JIT는 그 버그를 숨길 뿐이며, `volatile`은 원자성을 주지 않는다 — 락만 매번 정답 |
+| 2026-10-08 | `cs/` | [race_condition](cs/race_condition/) | 락 없는 증가는 갱신을 잃고, JIT는 그 버그를 숨길 뿐이며, `volatile`은 원자성을 주지 않는다 — 락만 매번 정답 |
