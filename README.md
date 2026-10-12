@@ -69,3 +69,4 @@ cs/
 | 날짜 / Date | 디렉터리 / Dir | 실험 / Experiment | 한 줄 결론 / One-line takeaway |
 |---|---|---|---|
 | 2026-10-08 | `cs/` | [race_condition](cs/race_condition/) | 락 없는 증가는 갱신을 잃고, JIT는 그 버그를 숨길 뿐이며, `volatile`은 원자성을 주지 않는다 — 락만 매번 정답 |
+| 2026-10-12 | `cs/` | [lock_implementations](cs/lock_implementations/) | 정확성은 깃발을 CAS로 바꾸느냐로 갈리고, 속도는 기다리는 방식(돌기·재우기·순서 지키기)으로 갈린다 |

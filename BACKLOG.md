@@ -5,6 +5,8 @@ Pick one when there's nothing new to test. Remove the line once done and add it 
 
 ## cs/
 
+- [ ] 테스트 앤 테스트 앤 셋(`while (state.get() == 1 || !state.compareAndSet(0, 1)) {}`)으로 바꾸면 `spin`이 `reentrant`만큼 빨라지는가? → 캐시 줄 핑퐁 가설 검증 *(lock_implementations 후속, 락 심화 L-1)*
+- [ ] `spin`의 대기 루프에 `Thread.yield()`를 넣으면 속도와 흔들림이 어떻게 변하는가? *(lock_implementations 후속, OSTEP 28.13)*
 - [ ] 세마포어 허가 3개 + 스레드 10개: `acquire`(대기) vs `tryAcquire`(거절) — 처리 시간과 거절 수 *(OSTEP 세마포어 장)*
 - [ ] B(`-Xint`)를 현재 코드로 다시 돌려 `JVM args=[-Xint]`가 찍힌 결과로 교체한다 *(race_condition 후속)*
 - [ ] 생산자·소비자(유한 버퍼)를 세마포어로 구현하고 버퍼 크기별 처리량 비교
@@ -15,6 +17,8 @@ Pick one when there's nothing new to test. Remove the line once done and add it 
 
 ## java/
 
+- [ ] `fair` 실행 중 `jcmd <PID> Thread.print`로 대기 스레드가 `WAITING (parking)` 상태인지 확인 → `java/reentrantlock_state` *(lock_implementations 후속, 락 심화 L-3)*
+- [ ] 같은 스레드가 `SpinLock`을 두 번 잡으면 어떻게 되는가? `ReentrantLock`은? (재진입) *(lock_implementations 후속)*
 - [ ] `Semaphore`의 fair 옵션이 처리량과 대기 순서에 주는 영향
 - [ ] `-XX:+PrintCompilation`으로 `noLock`이 C2(단계 4)로 컴파일되는 시점과, A에서 손실이 사라지는 회차가 일치하는가? (`%` 표시 = OSR) *(race_condition 후속)*
 - [ ] `AtomicInteger.incrementAndGet()`과 `LongAdder`를 같은 표에 추가하면 정확성과 시간은? *(race_condition 후속, OSTEP 28.9 비교 후 교환 이후)*
