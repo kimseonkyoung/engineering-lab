@@ -7,7 +7,6 @@ Pick one when there's nothing new to test. Remove the line once done and add it 
 
 - [ ] 테스트 앤 테스트 앤 셋(`while (state.get() == 1 || !state.compareAndSet(0, 1)) {}`)으로 바꾸면 `spin`이 `reentrant`만큼 빨라지는가? → 캐시 줄 핑퐁 가설 검증 *(lock_implementations 후속, 락 심화 L-1)*
 - [ ] `spin`의 대기 루프에 `Thread.yield()`를 넣으면 속도와 흔들림이 어떻게 변하는가? *(lock_implementations 후속, OSTEP 28.13)*
-- [ ] 세마포어 허가 3개 + 스레드 10개: `acquire`(대기) vs `tryAcquire`(거절) — 처리 시간과 거절 수 *(OSTEP 세마포어 장)*
 - [ ] B(`-Xint`)를 현재 코드로 다시 돌려 `JVM args=[-Xint]`가 찍힌 결과로 교체한다 *(race_condition 후속)*
 - [ ] 생산자·소비자(유한 버퍼)를 세마포어로 구현하고 버퍼 크기별 처리량 비교
 - [ ] 연결 대기열(backlog)이 꽉 찼을 때 클라이언트는 무엇을 보는가 (Java 소켓)
@@ -17,6 +16,7 @@ Pick one when there's nothing new to test. Remove the line once done and add it 
 
 ## java/
 
+- [ ] 인터럽트: `sleep`·`acquire`·`tryAcquire(timeout)`·`wait`·`join`에서 잠든 스레드와 보통 반복문을 도는 스레드에 각각 `interrupt()`를 보내면 무엇이 다른가 — 깨어나는 시간, 예외 발생 여부, 깃발(`isInterrupted`) 상태, `catch`에서 깃발을 다시 세우지 않으면 스레드 풀 `shutdownNow()`가 멈추지 못하는가 *(A1, semaphore_throttle 후속, 김영한 고급 1편 3절)* → `java/thread_interrupt`
 - [ ] `fair` 실행 중 `jcmd <PID> Thread.print`로 대기 스레드가 `WAITING (parking)` 상태인지 확인 → `java/reentrantlock_state` *(lock_implementations 후속, 락 심화 L-3)*
 - [ ] 같은 스레드가 `SpinLock`을 두 번 잡으면 어떻게 되는가? `ReentrantLock`은? (재진입) *(lock_implementations 후속)*
 - [ ] `Semaphore`의 fair 옵션이 처리량과 대기 순서에 주는 영향

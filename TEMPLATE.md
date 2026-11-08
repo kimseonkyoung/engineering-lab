@@ -27,9 +27,18 @@ What do I expect to happen, and why?
 어떻게 확인했는가? 실행 명령과 바꿔 본 조건을 적는다.
 How did I test it? Include the run command and what I varied.
 
+### 기본 실행 / Basic
+원리가 드러나는 최소 코드. 가설이 산수로 나와야 한다.
+
 ```bash
 java Example.java
 ```
+
+### 심화 실행 / Push & break
+같은 코드에서 경계를 밀거나 일부러 깨뜨린 조건. 시간이 남으면.
+
+### 실무 연결 / In practice
+이 원리가 라이브러리·회사 코드에서 어떤 이름으로 나타나는가. 한 단락. 커지면 별도 실험.
 
 ## Result
 
