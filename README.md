@@ -71,3 +71,4 @@ cs/
 | 2026-10-08 | `cs/` | [race_condition](cs/race_condition/) | 락 없는 증가는 갱신을 잃고, JIT는 그 버그를 숨길 뿐이며, `volatile`은 원자성을 주지 않는다 — 락만 매번 정답 |
 | 2026-10-12 | `cs/` | [lock_implementations](cs/lock_implementations/) | 정확성은 깃발을 CAS로 바꾸느냐로 갈리고, 속도는 기다리는 방식(돌기·재우기·순서 지키기)으로 갈린다 |
 | 2026-11-05 | `cs/` | [semaphore_throttle](cs/semaphore_throttle/) | 세마포어 초기값은 동시 실행 수의 상한, 넘치는 요청은 기다리거나·버려지거나·잠깐 기다리다 버려지는 세 길뿐 — 처리량이 높은 쪽이 좋은 쪽이 아니다 |
+| 2026-11-10 | `java/` | [bounded_queue_policy](java/bounded_queue_policy/) | 거부 정책은 과부하의 대가를 누구에게 지울지(넣는 쪽·새 일·오래된 일) 고르는 것이고, 대기열이 무한이면 정책은 불리지 않고 대가가 지연으로 숨는다 |
