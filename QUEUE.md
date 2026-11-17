@@ -8,19 +8,19 @@
 |---|---|---|---|---|---|---|---|
 | 1 | ■ | `cs/semaphore_throttle` | A2·A4 | 회사 | 40분 + 집 30분 | OSTEP 31.1~31.3, 31.7 | 11/9(월) 마무리 |
 | 2 | ■ | `java/bounded_queue_policy` | A4·E3 | 회사 | 40분 | 없음 (1번 결과) | 11/10(화) |
-| 3 | □ | `java/threadpool_params` | E3 | 회사 | 40분 | 없음 (2번 결과) | 11/18(수) ※ 일정표에 없음 |
-| 4 | □ | `java/thread_cost` | A1 | 회사 | 40분 | OSTEP 26.1~26.3 (집 30분) | 11/18(수) |
-| 5 | □ | `java/thread_lifecycle` (흥미) | A1 | 회사 | 30분 | 없음 | 11/19(목) |
-| 6 | □ | `java/condition_bounded_buffer` | E4 | 회사 | 40분 | OSTEP 30장 앞부분 (집 30분) | 11/20(금) |
-| 7 | □ | `java/jit_compilation_log` | D4 | 회사 | 30분 | 없음 (race_condition 후속) | 11/23(월) |
-| 8 | □ | `java/double_checked_locking` | D6 | 회사 | 40분 | 없음 | 11/24(화) |
-| 9 | □ | `java/hashmap_internals` | E1 | 회사 | 40분 × 2회 | 없음 | 11/25(수) |
-| 10 | □ | `java/fail_fast_iterator` | E2 | 회사 | 30분 | 없음 | 11/30(월) |
-| 11 | □ | `spring/toby_01_dao_separation` | C1 | 회사 | 40분 × 2회 | 토비 1.1~1.4 (집) | 12/1(화) |
-| 12 | □ | `java/classloader_identity` | D1 | 회사 | 40분 | 없음 | 12/7(월) |
-| 13 | □ | `java/lambda_indy` | D2 | 회사 | 30분 | 없음 | 12/8(화) |
-| 14 | □ | `java/reflection_cost` | D3 | 회사 | 40분 | 없음 | 12/9(수) |
-| 15 | □ | `java/type_erasure` | E5 | 회사 | 30분 | 없음 | 12/10(목) |
+| 3 | □ | `java/threadpool_params` | E3 | 회사 | 40분 | 없음 (2번 결과) | 11/18(수) |
+| 4 | □ | `java/thread_cost` | A1 | 회사 | 40분 | OSTEP 26.1~26.3 (집 30분) | 11/19(목) |
+| 5 | □ | `java/thread_lifecycle` (흥미) | A1 | 회사 | 30분 | 없음 | 11/20(금) |
+| 6 | □ | `java/condition_bounded_buffer` | E4 | 회사 | 40분 | OSTEP 30장 앞부분 (집 30분) | 11/23(월) |
+| 7 | □ | `java/jit_compilation_log` | D4 | 회사 | 30분 | 없음 (race_condition 후속) | 11/24(화) |
+| 8 | □ | `java/double_checked_locking` | D6 | 회사 | 40분 | 없음 | 11/25(수) |
+| 9 | □ | `java/hashmap_internals` | E1 | 회사 | 40분 × 2회 | 없음 | 11/30(월) |
+| 10 | □ | `java/fail_fast_iterator` | E2 | 회사 | 30분 | 없음 | 12/1(화) |
+| 11 | □ | `spring/toby_01_dao_separation` | C1 | 회사 | 40분 × 2회 | 토비 1.1~1.4 (집) | 12/7(월) |
+| 12 | □ | `java/classloader_identity` | D1 | 회사 | 40분 | 없음 | 12/8(화) |
+| 13 | □ | `java/lambda_indy` | D2 | 회사 | 30분 | 없음 | 12/9(수) |
+| 14 | □ | `java/reflection_cost` | D3 | 회사 | 40분 | 없음 | 12/10(목) |
+| 15 | □ | `java/type_erasure` | E5 | 회사 | 30분 | 없음 | 12/11(금) |
 | 16 | □ | `java/gc_generations` | D5 | 회사 | 40분 | 없음 | 12/14(월) |
 | 17 | □ | `java/stream_laziness` | E6 | 회사 | 30분 | 없음 | 12/15(화) |
 | 18 | □ | `java/bytebuffer_states` | E7 | 회사 | 40분 | 없음 | 12/16(수) |
@@ -51,6 +51,7 @@
 
 - 2월 본 지원 전, 늦어도 1월 중순까지 23~25번 완료. 1월 셋째 주는 예비(1/22까지).
 - 실험 없는 주간: 11/26~27(모의 면접), 12/2~4(한양대 면접 준비).
+- 12/7 주에 다섯 개(11~15번)가 몰림. 하나라도 밀리면 12/24로 넘긴다.
 - 이력서(12/6~20 확정)에는 23~25번 결과가 아직 없음 → "신뢰 경계·통제" 축은 깃시브·회사 AI 플랫폼으로 먼저 세우고, 실험 결과는 2월 지원 전에 추가.
 
 ## 제약
